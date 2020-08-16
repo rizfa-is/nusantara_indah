@@ -1,4 +1,4 @@
-package com.istekno.nusantaraindah
+package com.istekno.nusantaraindah.destinationjatim
 
 import android.view.LayoutInflater
 import android.view.View
@@ -8,6 +8,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
+import com.istekno.nusantaraindah.Destination
+import com.istekno.nusantaraindah.R
 import java.util.ArrayList
 
 class DestinationListAdapter(private val listDestination: ArrayList<Destination>) : RecyclerView.Adapter<DestinationListAdapter.ListViewHolder>() {
@@ -47,10 +49,10 @@ class DestinationListAdapter(private val listDestination: ArrayList<Destination>
             .apply(RequestOptions().override(150, 150))
             .into(holder.destiImg)
 
-        Glide.with(holder.itemView.context)
-            .load(place.favorite)
-            .apply(RequestOptions().override(55, 55))
-            .into(holder.btnFavorite)
+//        Glide.with(holder.itemView.context)
+//            .load(place.favorite)
+//            .apply(RequestOptions().override(55, 55))
+//            .into(holder.btnFavorite)
 
         holder.destiName.text = place.name
         holder.destCity.text = place.location

@@ -1,4 +1,4 @@
-package com.istekno.nusantaraindah
+package com.istekno.nusantaraindah.destinationjatim
 
 import android.view.LayoutInflater
 import android.view.View
@@ -8,7 +8,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import kotlinx.android.synthetic.main.recycler_view_grid.view.*
+import com.istekno.nusantaraindah.Destination
+import com.istekno.nusantaraindah.R
 import java.util.ArrayList
 
 class DestinationGridAdapter(private val gridDestination: ArrayList<Destination>) : RecyclerView.Adapter<DestinationGridAdapter.GridViewHolder>() {
@@ -47,15 +48,15 @@ class DestinationGridAdapter(private val gridDestination: ArrayList<Destination>
             .apply(RequestOptions().override(350, 550))
             .into(holder.destiImg)
 
-        Glide.with(holder.itemView.context)
-            .load(place.favorite)
-            .apply(RequestOptions().override(55, 55))
-            .into(holder.btnFavorite)
-
-        Glide.with(holder.itemView.context)
-            .load(place.circle)
-            .apply(RequestOptions().override(55, 55))
-            .into(holder.btnCircle)
+//        Glide.with(holder.itemView.context)
+//            .load(place.favorite)
+//            .apply(RequestOptions().override(55, 55))
+//            .into(holder.btnFavorite)
+//
+//        Glide.with(holder.itemView.context)
+//            .load(place.circle)
+//            .apply(RequestOptions().override(55, 55))
+//            .into(holder.btnCircle)
 
         holder.destiName.text = place.name
 

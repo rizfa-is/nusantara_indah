@@ -5,13 +5,15 @@ import android.net.Uri
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Button
-import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.istekno.nusantaraindah.destinationjatim.DestinationCardAdapter
+import com.istekno.nusantaraindah.destinationjatim.DestinationDataJatim
+import com.istekno.nusantaraindah.destinationjatim.DestinationGridAdapter
+import com.istekno.nusantaraindah.destinationjatim.DestinationListAdapter
 import java.util.ArrayList
 
 class DestinationMain : AppCompatActivity() {
@@ -36,7 +38,7 @@ class DestinationMain : AppCompatActivity() {
         rvDestination.setHasFixedSize(true)
 
 //        run List RecyclerView Activity
-        showDestinationCard()
+        showDestinationList()
 
     }
 
@@ -52,7 +54,10 @@ class DestinationMain : AppCompatActivity() {
 
     private fun showDestinationList() {
         rvDestination.layoutManager = LinearLayoutManager(this)
-        val listDestinationAdapter = DestinationListAdapter(list)
+        val listDestinationAdapter =
+            DestinationListAdapter(
+                list
+            )
         rvDestination.adapter = listDestinationAdapter
 
         listDestinationAdapter.setOnItemClickCallback(object : DestinationListAdapter.OnItemClickCallback{
@@ -64,7 +69,10 @@ class DestinationMain : AppCompatActivity() {
 
     private fun showDestinationGrid() {
         rvDestination.layoutManager = GridLayoutManager(this,2)
-        val gridDestinationAdapter = DestinationGridAdapter(list)
+        val gridDestinationAdapter =
+            DestinationGridAdapter(
+                list
+            )
         rvDestination.adapter = gridDestinationAdapter
 
         gridDestinationAdapter.setOnItemClickCallback(object : DestinationGridAdapter.OnItemClickCallback {

@@ -13,24 +13,24 @@
         android:scaleType="centerCrop"
         android:src="@drawable/jatim_a" />
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/btn_circle_detail_page"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="220dp"
-        android:layout_marginStart="330dp"
-        android:elevation="3dp"
-        android:src="@android:color/white"/>
+<!--    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--        android:id="@+id/btn_circle_detail_page"-->
+<!--        android:layout_width="35dp"-->
+<!--        android:layout_height="35dp"-->
+<!--        android:layout_marginTop="220dp"-->
+<!--        android:layout_marginStart="330dp"-->
+<!--        android:elevation="3dp"-->
+<!--        android:src="@android:color/white"/>-->
 
-    <ImageButton
-        android:id="@+id/btn_favorite_detail_page"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="226dp"
-        android:layout_marginStart="335.4dp"
-        android:elevation="3dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/btn_favorite"/>
+<!--    <ImageButton-->
+<!--        android:id="@+id/btn_favorite_detail_page"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="226dp"-->
+<!--        android:layout_marginStart="335.4dp"-->
+<!--        android:elevation="3dp"-->
+<!--        android:background="@android:color/transparent"-->
+<!--        android:src="@drawable/btn_favorite"/>-->
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
