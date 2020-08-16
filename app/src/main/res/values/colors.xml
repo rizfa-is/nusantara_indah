@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorBtnSplash">#7DCC59</color>
+    <color name="colorNavBar">#59AE6B</color>
+    <color name="colorNavBottom">#51A362</color>
+    <color name="myPhoto">#F36C67</color>
+</resources>

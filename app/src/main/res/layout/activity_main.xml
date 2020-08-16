@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/gb_splash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/splash_screen_new"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="312dp"
+        android:fontFamily="@font/crimson_text_reguler"
+        android:gravity="center"
+        android:text="@string/jelajah_nusantara"
+        android:textColor="@android:color/white"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="265dp"
+        android:fontFamily="@font/lato_light"
+        android:gravity="center"
+        android:text="@string/description_text"
+        android:textColor="@android:color/white"
+        android:textSize="15dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="145dp"
+        app:cardCornerRadius="15dp">
+
+        <Button
+            android:id="@+id/btn_splash_ayo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorBtnSplash"
+            android:text="@string/btn_ayo"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="17dp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/btn_splash_favorit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="95dp"
+        android:background="@android:color/transparent"
+        android:text="@string/btn_favorit"
+        android:textAllCaps="false"
+        android:textColor="@color/colorBtnSplash"
+        android:textSize="17dp" />
+
+</RelativeLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginTop="40dp">-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/btn_back"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            android:src="@drawable/btn_back"-->
+<!--            android:layout_marginLeft="35dp"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/pilih_provinsi"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_toRightOf="@id/btn_back"-->
+<!--            android:layout_marginLeft="17dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="Pilih Provinsi"-->
+<!--            android:textSize="20dp"-->
+<!--            android:fontFamily="@font/lato_bold"-->
+<!--            android:textColor="@android:color/white"/>-->
+<!--    </RelativeLayout>-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/choose_jatim"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            card_view:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    card_view:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:id="@+id/gb_jatim"
+                        android:layout_width="128dp"
+                        android:layout_height="128dp"
+                        android:layout_gravity="start"
+                        android:src="@drawable/jatim_icon" />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/crimson_text_bold"
+                    android:text="Jawa Timur"
+                    android:textColor="@color/colorNavBar"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/choose_jateng"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            card_view:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    card_view:cardCornerRadius="10dp">
+
+                    <ImageView
+                        android:id="@+id/gb_jateng"
+                        android:layout_width="128dp"
+                        android:layout_height="128dp"
+                        android:layout_gravity="end"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/jateng_icon" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/crimson_text_bold"
+                    android:text="Jawa Tengah"
+                    android:textColor="@color/colorNavBar"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+    <!--    <FrameLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:paddingLeft="40dp"-->
+<!--        android:paddingRight="40dp">-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/choose_jogja"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity="start"-->
+<!--            card_view:cardCornerRadius="10dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="10dp">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/gb_jogja"-->
+<!--                    android:layout_width="128dp"-->
+<!--                    android:layout_height="128dp"-->
+<!--                    android:scaleType="fitXY"-->
+<!--                    android:layout_gravity="start"-->
+<!--                    android:src="@drawable/jogja_icon" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:text="D. I. Yogyakarta"-->
+<!--                    android:textSize="17sp"-->
+<!--                    android:textColor="@color/colorBtnSplash"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:fontFamily="@font/crimson_text_bold"/>-->
+<!--            </LinearLayout>-->
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/choose_jabar"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity="end">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="10dp">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/gb_jabar"-->
+<!--                    android:layout_width="128dp"-->
+<!--                    android:layout_height="128dp"-->
+<!--                    android:scaleType="fitXY"-->
+<!--                    android:layout_gravity="end"-->
+<!--                    android:src="@drawable/jabar_icon" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:text="Jawa Barat"-->
+<!--                    android:textSize="17sp"-->
+<!--                    android:textColor="@color/colorBtnSplash"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:fontFamily="@font/crimson_text_bold"/>-->
+<!--            </LinearLayout>-->
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--    </FrameLayout>-->
+
+</LinearLayout>

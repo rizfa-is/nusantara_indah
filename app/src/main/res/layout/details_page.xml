@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_detail_page"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/jatim_a" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/btn_circle_detail_page"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginStart="330dp"
+        android:elevation="3dp"
+        android:src="@android:color/white"/>
+
+    <ImageButton
+        android:id="@+id/btn_favorite_detail_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="226dp"
+        android:layout_marginStart="335.4dp"
+        android:elevation="3dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/btn_favorite"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="@android:color/white"
+        android:layout_marginTop="235dp"
+        app:cardCornerRadius="10dp"/>
+
+    <TextView
+        android:id="@+id/name_destination_detail_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Taman Nasional Baluran"
+        android:textSize="20sp"
+        android:fontFamily="@font/crimson_text_bold"
+        android:textColor="@color/colorNavBar"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="16dp"
+        android:elevation="3dp"/>
+
+    <TextView
+        android:id="@+id/loc_destination_detail_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kabupaten Banyuwangi"
+        android:textSize="12sp"
+        android:fontFamily="@font/lato_reguler"
+        android:textColor="@color/colorBtnSplash"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="16dp"
+        android:elevation="3dp"/>
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:layout_marginTop="245dp"
+            android:layout_marginBottom="45dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/desc_detail_page"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/content_text"
+                    android:layout_marginBottom="17dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="60dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:textColor="@android:color/black"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:padding="5dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="250dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="10dp"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/gomap_detail_page"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="Lihat Peta Lokasi"
+                android:textColor="@android:color/white"
+                android:background="@color/colorNavBar"
+                android:textAllCaps="false"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
