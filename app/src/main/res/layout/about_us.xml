@@ -97,6 +97,7 @@
                 android:layout_marginRight="15dp">
 
                 <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btn_email_a"
                     android:layout_width="55dp"
                     android:layout_height="55dp"
                     android:layout_margin="7dp"
@@ -104,6 +105,7 @@
                     android:src="@color/colorBtnSplash"/>
 
                 <ImageView
+                    android:id="@+id/btn_email_b"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:src="@drawable/btn_email"
@@ -116,6 +118,7 @@
                 android:layout_marginRight="15dp">
 
                 <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btn_ig_a"
                     android:layout_width="55dp"
                     android:layout_height="55dp"
                     android:layout_margin="7dp"
@@ -123,6 +126,7 @@
                     android:src="@color/colorBtnSplash"/>
 
                 <ImageView
+                    android:id="@+id/btn_ig_b"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:src="@drawable/ig_icon"
@@ -135,6 +139,7 @@
                 android:layout_marginRight="15dp">
 
                 <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/btn_whatsapp_a"
                     android:layout_width="55dp"
                     android:layout_height="55dp"
                     android:layout_margin="7dp"
@@ -142,6 +147,7 @@
                     android:src="@color/colorBtnSplash"/>
 
                 <ImageView
+                    android:id="@+id/btn_whatsapp_b"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_centerInParent="true"
