@@ -4,8 +4,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.ImageButton
 import androidx.cardview.widget.CardView
+import com.istekno.nusantaraindah.destinationjateng.DestinationMainJateng
+import com.istekno.nusantaraindah.destinationjatim.DestinationMain
 
 class ChooseProvince : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,6 +19,9 @@ class ChooseProvince : AppCompatActivity(), View.OnClickListener {
 
         val btnJatim: CardView = findViewById(R.id.choose_jatim)
         btnJatim.setOnClickListener(this)
+
+        val btnJateng: CardView = findViewById(R.id.choose_jateng)
+        btnJateng.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
@@ -30,6 +34,11 @@ class ChooseProvince : AppCompatActivity(), View.OnClickListener {
             R.id.choose_jatim -> {
                 val chooseJatim = Intent(this@ChooseProvince, DestinationMain::class.java)
                 startActivity(chooseJatim)
+            }
+
+            R.id.choose_jateng -> {
+                val chooseJateng = Intent(this@ChooseProvince, DestinationMainJateng::class.java)
+                startActivity(chooseJateng)
             }
         }
     }

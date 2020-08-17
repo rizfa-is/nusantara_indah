@@ -3,14 +3,11 @@ package com.istekno.nusantaraindah
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
-import com.bumptech.glide.request.RequestOptions
+import com.istekno.nusantaraindah.destinationjatim.DestinationMain
 
 class DetailsPageMain() : AppCompatActivity(){
 

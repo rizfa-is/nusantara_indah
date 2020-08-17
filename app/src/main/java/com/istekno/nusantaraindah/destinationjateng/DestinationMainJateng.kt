@@ -1,4 +1,4 @@
-package com.istekno.nusantaraindah
+package com.istekno.nusantaraindah.destinationjateng
 
 import android.content.Intent
 import android.net.Uri
@@ -10,13 +10,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.istekno.nusantaraindah.destinationjatim.DestinationCardAdapter
-import com.istekno.nusantaraindah.destinationjatim.DestinationDataJatim
-import com.istekno.nusantaraindah.destinationjatim.DestinationGridAdapter
-import com.istekno.nusantaraindah.destinationjatim.DestinationListAdapter
+import com.istekno.nusantaraindah.*
 import java.util.ArrayList
 
-class DestinationMain : AppCompatActivity() {
+class DestinationMainJateng : AppCompatActivity() {
 
     private lateinit var rvDestination : RecyclerView
     private var list: ArrayList<Destination> = arrayListOf()
@@ -28,11 +25,11 @@ class DestinationMain : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.recycler_view_main)
-        supportActionBar?.title = "Daftar Wisata"
+        supportActionBar?.title = "Daftar Wisata Jawa Tengah"
 
-//        Create list from getter listData from DestinationDataJatim
+//        Create list from getter listData from DestinationDataJateng
         rvDestination = findViewById(R.id.rv_main)
-        list.addAll(DestinationDataJatim.listData)
+        list.addAll(DestinationDataJateng.listData)
 
 //        Initializing Recycle View Layout by findViewById
         rvDestination.setHasFixedSize(true)
@@ -122,7 +119,8 @@ class DestinationMain : AppCompatActivity() {
     private fun showSelectedhero(desti: Destination) {
         Toast.makeText(this, "Kamu memilih " + desti.name, Toast.LENGTH_SHORT).show()
 
-        val detailPage = Intent(this@DestinationMain,DetailsPageMain::class.java)
+        val detailPage = Intent(this@DestinationMainJateng,
+            DetailsPageMain::class.java)
         detailPage.putExtra(INTENT_PARCELABLE,desti)
         startActivity(detailPage)
     }

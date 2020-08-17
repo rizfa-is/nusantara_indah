@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AboutUsPage"/>
-        <activity android:name=".DetailsPageMain"/>
-        <activity android:name=".ChooseProvince"/>
-        <activity android:name=".DestinationMain"/>
+        <activity android:name=".destinationjateng.DestinationMainJateng"></activity>
+        <activity android:name=".AboutUsPage" />
+        <activity android:name=".DetailsPageMain" />
+        <activity android:name=".ChooseProvince" />
+        <activity android:name=".destinationjatim.DestinationMain" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 }
 
 /*
+TODO - Add Splash Screen
 TODO - Add Favorit Feature using Room Database or SQL
 TODO - Add Bottom Navigation : Home, Content, Favorit, My Profil
 TODO - Customize back button in details page
