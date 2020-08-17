@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.cardview.widget.CardView
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.ismaeldivita.chipnavigation.ChipNavigationBar
 import com.istekno.nusantaraindah.destinationjateng.DestinationMainJateng
 import com.istekno.nusantaraindah.destinationjatim.DestinationMain
 
@@ -25,28 +26,20 @@ class ChooseProvince : AppCompatActivity(), View.OnClickListener {
         btnJateng.setOnClickListener(this)
 
         //        Navigation Bottom
-        val bottomNavigation : BottomNavigationView = findViewById(R.id.bottom_nav)
-        bottomNavigation.selectedItemId = R.id.content_nav
-        bottomNavigation.isSelected
-
-        bottomNavigation.setOnNavigationItemSelectedListener {
-            when(it.itemId) {
+        val bottomNavigation : ChipNavigationBar = findViewById(R.id.bottom_nav_test)
+        bottomNavigation.setItemSelected(R.id.content_nav)
+        bottomNavigation.setOnItemSelectedListener{
+            when(it) {
                 R.id.home_nav -> {
                     val intent = Intent(this,MainActivity::class.java)
                     startActivity(intent)
-                    return@setOnNavigationItemSelectedListener true
                 }
-                R.id.content_nav -> {
 
-                    return@setOnNavigationItemSelectedListener true
-                }
                 R.id.profil_nav -> {
                     val intent = Intent(this,AboutUsPage::class.java)
                     startActivity(intent)
-                    return@setOnNavigationItemSelectedListener true
                 }
             }
-            false
         }
 //        Navigation Bottom
     }

@@ -295,19 +295,16 @@
         </LinearLayout>
     </ScrollView>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_nav"
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/bottom_nav_test"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="0dp"
         android:background="@drawable/rounded"
         android:gravity="start"
-        app:itemIconSize="22dp"
-        app:itemIconTint="@android:color/white"
-        app:itemTextColor="@android:color/white"
-        app:labelVisibilityMode="selected"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:menu="@menu/bottom_nav_menu" />
+        app:cnb_menuResource="@menu/bottom_nav_test"
+        app:cnb_unselectedColor="@color/colorNavBottom"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </RelativeLayout>

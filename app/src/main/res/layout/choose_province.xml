@@ -126,20 +126,17 @@
 
     </FrameLayout>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_nav"
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/bottom_nav_test"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="0dp"
         android:background="@drawable/rounded"
         android:gravity="start"
-        card_view:itemIconSize="22dp"
-        card_view:itemIconTint="@android:color/white"
-        card_view:itemTextColor="@android:color/white"
-        card_view:labelVisibilityMode="selected"
-        card_view:layout_constraintBottom_toBottomOf="parent"
-        card_view:menu="@menu/bottom_nav_menu" />
+        card_view:cnb_menuResource="@menu/bottom_nav_test"
+        card_view:cnb_unselectedColor="@color/colorNavBottom"
+        card_view:layout_constraintBottom_toBottomOf="parent" />
 
     <!--    <FrameLayout-->
 <!--        android:layout_width="match_parent"-->

@@ -46,30 +46,22 @@ class AboutUsPage : AppCompatActivity(), View.OnClickListener {
         btnGithubText.setOnClickListener(this)
 
 //        Navigation Bottom
-        val bottomNavigation : BottomNavigationView = findViewById(R.id.bottom_nav)
-        bottomNavigation.selectedItemId = R.id.profil_nav
-        bottomNavigation.isSelected
-
-        bottomNavigation.setOnNavigationItemSelectedListener {
-            when(it.itemId) {
+        val bottomNavigation : ChipNavigationBar = findViewById(R.id.bottom_nav_test)
+        bottomNavigation.setItemSelected(R.id.profil_nav)
+        bottomNavigation.setOnItemSelectedListener{
+            when(it) {
                 R.id.home_nav -> {
                     val intent = Intent(this,MainActivity::class.java)
                     startActivity(intent)
-                    return@setOnNavigationItemSelectedListener true
                 }
+
                 R.id.content_nav -> {
                     val intent = Intent(this,ChooseProvince::class.java)
                     startActivity(intent)
-                    return@setOnNavigationItemSelectedListener true
-                }
-                R.id.profil_nav -> {
-                    return@setOnNavigationItemSelectedListener true
                 }
             }
-            false
         }
 //        Navigation Bottom
-
     }
 
     override fun onClick(v: View) {

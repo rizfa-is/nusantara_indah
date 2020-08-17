@@ -9,7 +9,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_main"
@@ -20,19 +21,16 @@
     </RelativeLayout>
 
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_nav"
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/bottom_nav_test"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="0dp"
         android:background="@drawable/rounded"
         android:gravity="start"
-        tool:itemIconSize="22dp"
-        tool:itemIconTint="@android:color/white"
-        tool:itemTextColor="@android:color/white"
-        tool:labelVisibilityMode="selected"
-        tool:layout_constraintBottom_toBottomOf="parent"
-        tool:menu="@menu/bottom_nav_menu" />
+        tool:cnb_menuResource="@menu/bottom_nav_test"
+        tool:cnb_unselectedColor="@color/colorNavBottom"
+        tool:layout_constraintBottom_toBottomOf="parent" />
 
 </RelativeLayout>
