@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
@@ -126,6 +126,21 @@
 
     </FrameLayout>
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/rounded"
+        android:gravity="start"
+        card_view:itemIconSize="22dp"
+        card_view:itemIconTint="@android:color/white"
+        card_view:itemTextColor="@android:color/white"
+        card_view:labelVisibilityMode="selected"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:menu="@menu/bottom_nav_menu" />
+
     <!--    <FrameLayout-->
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="wrap_content"-->
@@ -202,4 +217,4 @@
 
 <!--    </FrameLayout>-->
 
-</LinearLayout>
+</RelativeLayout>

@@ -1,14 +1,20 @@
 package com.istekno.nusantaraindah
 
+import android.content.ClipData
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.view.MenuItem
 import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.view.menu.MenuView
 import androidx.fragment.app.Fragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.navigation.NavigationView
+import com.ismaeldivita.chipnavigation.ChipNavigationBar
 import de.hdodenhof.circleimageview.CircleImageView
 import kotlinx.android.synthetic.main.about_us.*
 
@@ -38,6 +44,32 @@ class AboutUsPage : AppCompatActivity(), View.OnClickListener {
         btnGithub.setOnClickListener(this)
         val btnGithubText = findViewById<TextView>(R.id.github_text)
         btnGithubText.setOnClickListener(this)
+
+//        Navigation Bottom
+        val bottomNavigation : BottomNavigationView = findViewById(R.id.bottom_nav)
+        bottomNavigation.selectedItemId = R.id.profil_nav
+        bottomNavigation.isSelected
+
+        bottomNavigation.setOnNavigationItemSelectedListener {
+            when(it.itemId) {
+                R.id.home_nav -> {
+                    val intent = Intent(this,MainActivity::class.java)
+                    startActivity(intent)
+                    return@setOnNavigationItemSelectedListener true
+                }
+                R.id.content_nav -> {
+                    val intent = Intent(this,ChooseProvince::class.java)
+                    startActivity(intent)
+                    return@setOnNavigationItemSelectedListener true
+                }
+                R.id.profil_nav -> {
+                    return@setOnNavigationItemSelectedListener true
+                }
+            }
+            false
+        }
+//        Navigation Bottom
+
     }
 
     override fun onClick(v: View) {
@@ -75,4 +107,5 @@ class AboutUsPage : AppCompatActivity(), View.OnClickListener {
         }
     }
 }
+
 

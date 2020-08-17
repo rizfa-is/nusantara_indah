@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.istekno.nusantaraindah.*
 import java.util.ArrayList
 
@@ -37,6 +38,31 @@ class DestinationMainJateng : AppCompatActivity() {
 //        run List RecyclerView Activity
         showDestinationList()
 
+        //        Navigation Bottom
+        val bottomNavigation : BottomNavigationView = findViewById(R.id.bottom_nav)
+        bottomNavigation.selectedItemId = R.id.content_nav
+        bottomNavigation.isSelected
+
+        bottomNavigation.setOnNavigationItemSelectedListener {
+            when(it.itemId) {
+                R.id.home_nav -> {
+                    val intent = Intent(this,MainActivity::class.java)
+                    startActivity(intent)
+                    return@setOnNavigationItemSelectedListener true
+                }
+                R.id.content_nav -> {
+
+                    return@setOnNavigationItemSelectedListener true
+                }
+                R.id.profil_nav -> {
+                    val intent = Intent(this,AboutUsPage::class.java)
+                    startActivity(intent)
+                    return@setOnNavigationItemSelectedListener true
+                }
+            }
+            false
+        }
+//        Navigation Bottom
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

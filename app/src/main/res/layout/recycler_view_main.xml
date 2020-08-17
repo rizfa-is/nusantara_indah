@@ -7,10 +7,32 @@
     android:layout_height="match_parent"
     android:id="@+id/recycler_main">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_main"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:listitem="@layout/recycler_view_list"/>
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/recycler_view_list"/>
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/rounded"
+        android:gravity="start"
+        tool:itemIconSize="22dp"
+        tool:itemIconTint="@android:color/white"
+        tool:itemTextColor="@android:color/white"
+        tool:labelVisibilityMode="selected"
+        tool:layout_constraintBottom_toBottomOf="parent"
+        tool:menu="@menu/bottom_nav_menu" />
 
 </RelativeLayout>

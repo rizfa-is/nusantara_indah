@@ -1,293 +1,313 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        android:orientation="vertical"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="30dp">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="320dp"
-                android:layout_height="200dp"
-                app:cardCornerRadius="15dp"
-                android:layout_centerHorizontal="true">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/jatim_b" />
-            </androidx.cardview.widget.CardView>
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="110dp"
-                android:layout_height="110dp"
-                android:elevation="2dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="146dp"
-                android:src="@android:color/white"/>
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:elevation="2dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="150dp"
-                android:src="@color/colorBtnSplash"/>
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="92dp"
-                android:layout_height="92dp"
-                android:elevation="2dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="154dp"
-                android:src="@android:color/white"/>
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="85dp"
-                android:layout_height="85dp"
-                android:elevation="2dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="157dp"
-                android:src="@drawable/my_photo"/>
-
-        </RelativeLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_gravity="center_horizontal"
-            android:text="Rosyid Rosadi"
-            android:fontFamily="@font/crimson_text_reguler"
-            android:textColor="@android:color/black"
-            android:textSize="27sp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="3dp"
-            android:layout_gravity="center_horizontal"
-            android:text="Android Developer"
-            android:fontFamily="@font/lato_reguler"
-            android:textSize="15sp"/>
-
-        <TextView
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="40dp"
-            android:lineSpacingExtra="4dp"
-            android:text="@string/my_profil_desc"
-            android:textSize="13sp" />
+        android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_gravity="center"
-            android:gravity="left"
-            android:layout_marginTop="17dp">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="320dp"
+                    android:layout_height="200dp"
+                    app:cardCornerRadius="15dp"
+                    android:layout_centerHorizontal="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/jatim_b" />
+                </androidx.cardview.widget.CardView>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:elevation="2dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="146dp"
+                    android:src="@android:color/white"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:elevation="2dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="150dp"
+                    android:src="@color/colorBtnSplash"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="92dp"
+                    android:layout_height="92dp"
+                    android:elevation="2dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="154dp"
+                    android:src="@android:color/white"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:elevation="2dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="157dp"
+                    android:src="@drawable/my_photo"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Rosyid Rosadi"
+                android:fontFamily="@font/crimson_text_reguler"
+                android:textColor="@android:color/black"
+                android:textSize="27sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Android Developer"
+                android:fontFamily="@font/lato_reguler"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="40dp"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/my_profil_desc"
+                android:textSize="13sp" />
 
             <LinearLayout
-                android:layout_width="185dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:layout_marginTop="17dp">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="185dp"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginBottom="10dp">
+                    android:orientation="vertical">
 
-                    <RelativeLayout
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="7dp">
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
 
-                        <!--                <de.hdodenhof.circleimageview.CircleImageView-->
-                        <!--                    android:id="@+id/btn_email_a"-->
-                        <!--                    android:layout_width="40dp"-->
-                        <!--                    android:layout_height="40dp"-->
-                        <!--                    android:layout_centerHorizontal="true"-->
-                        <!--                    android:src="@android:color/white"/>-->
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="7dp">
 
-                        <ImageView
-                            android:id="@+id/btn_email_b"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
-                            android:src="@drawable/btn_email"
-                            android:layout_centerInParent="true"/>
+                            <!--                <de.hdodenhof.circleimageview.CircleImageView-->
+                            <!--                    android:id="@+id/btn_email_a"-->
+                            <!--                    android:layout_width="40dp"-->
+                            <!--                    android:layout_height="40dp"-->
+                            <!--                    android:layout_centerHorizontal="true"-->
+                            <!--                    android:src="@android:color/white"/>-->
 
-                    </RelativeLayout>
+                            <ImageView
+                                android:id="@+id/btn_email_b"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/btn_email"
+                                android:layout_centerInParent="true"/>
 
-                    <TextView
-                        android:id="@+id/email_text"
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/email_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="rosyidrosadi15@gmail.com"
+                            android:fontFamily="@font/lato_reguler"
+                            android:textColor="@color/colorNavBar"
+                            android:textSize="12sp"
+                            android:layout_toEndOf="@id/btn_email_b"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:text="rosyidrosadi15@gmail.com"
-                        android:fontFamily="@font/lato_reguler"
-                        android:textColor="@color/colorNavBar"
-                        android:textSize="12sp"
-                        android:layout_toEndOf="@id/btn_email_b"/>
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="8dp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="7dp">
+
+                            <!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+                            <!--                        android:id="@+id/btn_ig_a"-->
+                            <!--                        android:layout_width="40dp"-->
+                            <!--                        android:layout_height="40dp"-->
+                            <!--                        android:layout_centerHorizontal="true"-->
+                            <!--                        android:src="@color/colorBtnSplash" />-->
+
+                            <ImageView
+                                android:id="@+id/btn_ig_b"
+                                android:layout_width="23dp"
+                                android:layout_height="23dp"
+                                android:layout_marginLeft="3dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ig_icon" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/ig_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="rosyid_arsha"
+                            android:fontFamily="@font/lato_reguler"
+                            android:textColor="@color/colorNavBar"
+                            android:textSize="12sp"
+                            android:layout_toEndOf="@id/btn_email_b"/>
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="185dp"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginBottom="8dp">
+                    android:orientation="vertical">
 
-                    <RelativeLayout
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="7dp">
+                        android:orientation="horizontal"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="10dp">
 
-                        <!--                    <de.hdodenhof.circleimageview.CircleImageView-->
-                        <!--                        android:id="@+id/btn_ig_a"-->
-                        <!--                        android:layout_width="40dp"-->
-                        <!--                        android:layout_height="40dp"-->
-                        <!--                        android:layout_centerHorizontal="true"-->
-                        <!--                        android:src="@color/colorBtnSplash" />-->
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="7dp">
 
-                        <ImageView
-                            android:id="@+id/btn_ig_b"
-                            android:layout_width="23dp"
-                            android:layout_height="23dp"
-                            android:layout_marginLeft="3dp"
-                            android:layout_centerInParent="true"
-                            android:src="@drawable/ig_icon" />
-                    </RelativeLayout>
+                            <!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+                            <!--                        android:id="@+id/btn_whatsapp_a"-->
+                            <!--                        android:layout_width="40dp"-->
+                            <!--                        android:layout_height="40dp"-->
+                            <!--                        android:layout_centerHorizontal="true"-->
+                            <!--                        android:src="@color/colorBtnSplash"/>-->
 
-                    <TextView
-                        android:id="@+id/ig_text"
+                            <ImageView
+                                android:id="@+id/btn_github_b"
+                                android:layout_width="23dp"
+                                android:layout_height="23dp"
+                                android:layout_marginLeft="3dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/github_icon" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/github_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="https://github.com/rizfa-is"
+                            android:fontFamily="@font/lato_reguler"
+                            android:textColor="@color/colorNavBar"
+                            android:textSize="12sp"
+                            android:layout_toEndOf="@id/btn_email_b"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:text="rosyid_arsha"
-                        android:fontFamily="@font/lato_reguler"
-                        android:textColor="@color/colorNavBar"
-                        android:textSize="12sp"
-                        android:layout_toEndOf="@id/btn_email_b"/>
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="7dp">
+
+                            <!--                    <de.hdodenhof.circleimageview.CircleImageView-->
+                            <!--                        android:id="@+id/btn_whatsapp_a"-->
+                            <!--                        android:layout_width="40dp"-->
+                            <!--                        android:layout_height="40dp"-->
+                            <!--                        android:layout_centerHorizontal="true"-->
+                            <!--                        android:src="@color/colorBtnSplash"/>-->
+
+                            <ImageView
+                                android:id="@+id/btn_whatsapp_b"
+                                android:layout_width="23dp"
+                                android:layout_height="23dp"
+                                android:layout_marginLeft="3dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/wa_icon" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/wa_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="0857 - 3532 - 1687"
+                            android:fontFamily="@font/lato_reguler"
+                            android:textColor="@color/colorNavBar"
+                            android:textSize="12sp"
+                            android:layout_toEndOf="@id/btn_email_b"/>
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="185dp"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="2dp"
-                    android:layout_marginBottom="10dp">
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="7dp">
-
-                        <!--                    <de.hdodenhof.circleimageview.CircleImageView-->
-                        <!--                        android:id="@+id/btn_whatsapp_a"-->
-                        <!--                        android:layout_width="40dp"-->
-                        <!--                        android:layout_height="40dp"-->
-                        <!--                        android:layout_centerHorizontal="true"-->
-                        <!--                        android:src="@color/colorBtnSplash"/>-->
-
-                        <ImageView
-                            android:id="@+id/btn_github_b"
-                            android:layout_width="23dp"
-                            android:layout_height="23dp"
-                            android:layout_marginLeft="3dp"
-                            android:layout_centerInParent="true"
-                            android:src="@drawable/github_icon" />
-                    </RelativeLayout>
-
-                    <TextView
-                        android:id="@+id/github_text"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:text="https://github.com/rizfa-is"
-                        android:fontFamily="@font/lato_reguler"
-                        android:textColor="@color/colorNavBar"
-                        android:textSize="12sp"
-                        android:layout_toEndOf="@id/btn_email_b"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="7dp">
-
-                        <!--                    <de.hdodenhof.circleimageview.CircleImageView-->
-                        <!--                        android:id="@+id/btn_whatsapp_a"-->
-                        <!--                        android:layout_width="40dp"-->
-                        <!--                        android:layout_height="40dp"-->
-                        <!--                        android:layout_centerHorizontal="true"-->
-                        <!--                        android:src="@color/colorBtnSplash"/>-->
-
-                        <ImageView
-                            android:id="@+id/btn_whatsapp_b"
-                            android:layout_width="23dp"
-                            android:layout_height="23dp"
-                            android:layout_marginLeft="3dp"
-                            android:layout_centerInParent="true"
-                            android:src="@drawable/wa_icon" />
-                    </RelativeLayout>
-
-                    <TextView
-                        android:id="@+id/wa_text"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_vertical"
-                        android:text="0857 - 3532 - 1687"
-                        android:fontFamily="@font/lato_reguler"
-                        android:textColor="@color/colorNavBar"
-                        android:textSize="12sp"
-                        android:layout_toEndOf="@id/btn_email_b"/>
-
-                </LinearLayout>
-
-            </LinearLayout>
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="100dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Click on icon or text to directing into account"
+                android:textStyle="italic"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="10dp"/>
 
         </LinearLayout>
+    </ScrollView>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="100dp"
-            android:layout_gravity="center_horizontal"
-            android:text="Click on icon or text to directing into account"
-            android:textStyle="italic"
-            android:textColor="@android:color/darker_gray"
-            android:textSize="10dp"/>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/rounded"
+        android:gravity="start"
+        app:itemIconSize="22dp"
+        app:itemIconTint="@android:color/white"
+        app:itemTextColor="@android:color/white"
+        app:labelVisibilityMode="selected"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
 
-    </LinearLayout>
-
-</ScrollView>
+</RelativeLayout>
