@@ -21,9 +21,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         val btnSplashAyo: Button = findViewById(R.id.btn_splash_ayo)
         btnSplashAyo.setOnClickListener(this)
-
-        val btnSplashFavorit: Button = findViewById(R.id.btn_splash_favorit)
-        btnSplashFavorit.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
@@ -32,12 +29,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 Toast.makeText(this, "Ayo berpetualang !", Toast.LENGTH_SHORT).show()
                 val chooseProv = Intent(this@MainActivity, ChooseProvince::class.java)
                 startActivity(chooseProv)
-            }
-
-            R.id.btn_splash_favorit -> {
-                Toast.makeText(this, "Go to Profil", Toast.LENGTH_SHORT).show()
-                val chooseProfil = Intent(this@MainActivity, AboutUsPage::class.java)
-                startActivity(chooseProfil)
             }
         }
     }
