@@ -12,11 +12,12 @@
         android:layout_centerInParent="true"
         android:layout_centerHorizontal="true"
         android:elevation="2dp"
-        android:fontFamily="@font/crimson_text_bold"
+        android:fontFamily="@font/crimson_text_reguler"
         android:gravity="center"
         android:text="Nusantara Indah"
         android:textColor="@android:color/primary_text_dark"
-        android:textSize="35sp" />
+        android:textSize="40sp"
+        android:textStyle="bold"/>
 
     <ImageView
         android:id="@+id/splash_screen"

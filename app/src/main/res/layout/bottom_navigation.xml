@@ -10,7 +10,7 @@
         android:layout_height="50dp"
         android:background="@drawable/rounded"
         android:gravity="start"
-        app:cnb_menuResource="@menu/bottom_nav_test"
+        app:cnb_menuResource="@menu/bottom_nav"
         app:cnb_unselectedColor="@color/colorNavBottom"
         app:layout_constraintBottom_toBottomOf="parent" />
 

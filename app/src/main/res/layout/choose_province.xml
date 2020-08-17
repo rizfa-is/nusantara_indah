@@ -6,31 +6,32 @@
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-<!--    <RelativeLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="50dp"-->
-<!--        android:layout_marginTop="40dp">-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_action">
 
-<!--        <ImageButton-->
+<!--        <ImageView-->
 <!--            android:id="@+id/btn_back"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:background="@android:color/transparent"-->
-<!--            android:src="@drawable/btn_back"-->
-<!--            android:layout_marginLeft="35dp"/>-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            android:layout_marginBottom="20dp"-->
+<!--            android:src="@drawable/btn_back" />-->
 
-<!--        <TextView-->
-<!--            android:id="@+id/pilih_provinsi"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:layout_toRightOf="@id/btn_back"-->
-<!--            android:layout_marginLeft="17dp"-->
-<!--            android:gravity="center"-->
-<!--            android:text="Pilih Provinsi"-->
-<!--            android:textSize="20dp"-->
-<!--            android:fontFamily="@font/lato_bold"-->
-<!--            android:textColor="@android:color/white"/>-->
-<!--    </RelativeLayout>-->
+        <TextView
+            android:id="@+id/pilih_provinsi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/lato_bold"
+            android:gravity="center"
+            android:text="Pilih Provinsi"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -134,7 +135,7 @@
         android:layout_marginBottom="0dp"
         android:background="@drawable/rounded"
         android:gravity="start"
-        card_view:cnb_menuResource="@menu/bottom_nav_test"
+        card_view:cnb_menuResource="@menu/bottom_nav"
         card_view:cnb_unselectedColor="@color/colorNavBottom"
         card_view:layout_constraintBottom_toBottomOf="parent" />
 

@@ -9,7 +9,36 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_action">
+
+        <TextView
+            android:id="@+id/daftar_wisata"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/lato_bold"
+            android:gravity="center"
+            android:text="Daftar Wisata"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/icon_list"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/icon_list" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
         android:layout_marginBottom="50dp">
 
         <androidx.recyclerview.widget.RecyclerView
@@ -29,7 +58,7 @@
         android:layout_marginBottom="0dp"
         android:background="@drawable/rounded"
         android:gravity="start"
-        tool:cnb_menuResource="@menu/bottom_nav_test"
+        tool:cnb_menuResource="@menu/bottom_nav"
         tool:cnb_unselectedColor="@color/colorNavBottom"
         tool:layout_constraintBottom_toBottomOf="parent" />
 

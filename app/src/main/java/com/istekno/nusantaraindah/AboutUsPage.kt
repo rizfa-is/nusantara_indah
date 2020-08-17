@@ -23,7 +23,8 @@ class AboutUsPage : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.about_us)
-        supportActionBar?.title = "My Profil"
+        supportActionBar?.hide()
+//        supportActionBar?.title = "My Profil"
 
         val btnEmailB = findViewById<ImageView>(R.id.btn_email_b)
         btnEmailB.setOnClickListener(this)

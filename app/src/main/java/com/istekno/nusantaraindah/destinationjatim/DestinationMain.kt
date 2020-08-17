@@ -5,6 +5,9 @@ import android.net.Uri
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.ImageView
+import android.widget.PopupMenu
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
@@ -27,7 +30,10 @@ class DestinationMain : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.recycler_view_main)
-        supportActionBar?.title = "Daftar Wisata Jawa Timur"
+//        supportActionBar?.title = "Daftar Wisata Jawa Timur"
+        supportActionBar?.hide()
+//        val title : TextView = findViewById(R.id.daftar_wisata)
+//        title.text = "Daftar Wisata Jawa Timur"
 
 //        Create list from getter listData from DestinationDataJatim
         rvDestination = findViewById(R.id.rv_main)
@@ -56,16 +62,34 @@ class DestinationMain : AppCompatActivity() {
             }
         }
 //        Navigation Bottom
-    }
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu_main, menu)
-        return super.onCreateOptionsMenu(menu)
-    }
+//        Custom Option List Menu
+        val iconList = findViewById<ImageView>(R.id.icon_list)
+        iconList.setOnClickListener {
+            val popupMenu = PopupMenu(this, iconList)
+            popupMenu.menuInflater.inflate(R.menu.menu_main, popupMenu.menu)
+            popupMenu.setOnMenuItemClickListener(object : PopupMenu.OnMenuItemClickListener {
+                override fun onMenuItemClick(v: MenuItem): Boolean {
+                    when (v.itemId) {
+                        R.id.action_list -> {
+                            showDestinationList()
+                        }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        setMode(item.itemId)
-        return super.onOptionsItemSelected(item)
+                        R.id.action_grid -> {
+                            showDestinationGrid()
+                        }
+
+                        R.id.action_card -> {
+                            showDestinationCard()
+                        }
+                    }
+                    return true
+                }
+            })
+            popupMenu.show()
+        }
+//        Custom Option List Menu
+
     }
 
     private fun showDestinationList() {
@@ -118,22 +142,6 @@ class DestinationMain : AppCompatActivity() {
                 startActivity(mMapIntent)
             }
         })
-    }
-
-    private fun setMode(selectMode: Int) {
-        when (selectMode) {
-            R.id.action_list -> {
-                showDestinationList()
-            }
-
-            R.id.action_grid -> {
-                showDestinationGrid()
-            }
-
-            R.id.action_card -> {
-                showDestinationCard()
-            }
-        }
     }
 
     private fun showSelectedhero(desti: Destination) {
