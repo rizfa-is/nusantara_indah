@@ -16,7 +16,10 @@
         <activity android:name=".DetailsPageMain" />
         <activity android:name=".ChooseProvince" />
         <activity android:name=".destinationjatim.DestinationMain" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"/>
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
