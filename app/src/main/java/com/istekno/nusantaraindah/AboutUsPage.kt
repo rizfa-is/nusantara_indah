@@ -11,7 +11,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import de.hdodenhof.circleimageview.CircleImageView
 import kotlinx.android.synthetic.main.about_us.*
-import kotlinx.android.synthetic.main.bottom_navigation.*
 
 class AboutUsPage : AppCompatActivity(), View.OnClickListener {
 

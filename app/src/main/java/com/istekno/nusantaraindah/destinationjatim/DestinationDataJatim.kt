@@ -92,36 +92,6 @@ object DestinationDataJatim {
         R.drawable.jatim_l
     )
 
-    private val destiFavorite = intArrayOf(
-        R.drawable.btn_favorite,
-        R.drawable.btn_favorite,
-        R.drawable.btn_favorite,
-        R.drawable.btn_favorite,
-        R.drawable.btn_favorite,
-        R.drawable.btn_favorite,
-        R.drawable.btn_favorite,
-        R.drawable.btn_favorite,
-        R.drawable.btn_favorite,
-        R.drawable.btn_favorite,
-        R.drawable.btn_favorite,
-        R.drawable.btn_favorite
-    )
-
-    private val btnCircleGrid = intArrayOf(
-        R.drawable.btn_circle,
-        R.drawable.btn_circle,
-        R.drawable.btn_circle,
-        R.drawable.btn_circle,
-        R.drawable.btn_circle,
-        R.drawable.btn_circle,
-        R.drawable.btn_circle,
-        R.drawable.btn_circle,
-        R.drawable.btn_circle,
-        R.drawable.btn_circle,
-        R.drawable.btn_circle,
-        R.drawable.btn_circle
-    )
-
     val listData: ArrayList<Destination>
         get() {
             val list = arrayListOf<Destination>()
@@ -130,8 +100,6 @@ object DestinationDataJatim {
                 hero.name = destinationName[position]
                 hero.location = destinationCity[position]
                 hero.photo = destinationImage[position]
-                hero.favorite = destiFavorite[position]
-                hero.circle = btnCircleGrid[position]
                 hero.description = destiDescription[position]
                 list.add(hero)
             }
