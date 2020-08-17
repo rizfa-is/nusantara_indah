@@ -20,46 +20,58 @@ class AboutUsPage : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.about_us)
         supportActionBar?.title = "My Profil"
 
-        val btnEmailA = findViewById<CircleImageView>(R.id.btn_email_a)
-        btnEmailA.setOnClickListener(this)
         val btnEmailB = findViewById<ImageView>(R.id.btn_email_b)
         btnEmailB.setOnClickListener(this)
+        val btnEmailText = findViewById<TextView>(R.id.email_text)
+        btnEmailText.setOnClickListener(this)
 
-        val btnIGA = findViewById<CircleImageView>(R.id.btn_ig_a)
-        btnIGA.setOnClickListener(this)
         val btnIGB = findViewById<ImageView>(R.id.btn_ig_b)
         btnIGB.setOnClickListener(this)
+        val btnIGText = findViewById<TextView>(R.id.ig_text)
+        btnIGText.setOnClickListener(this)
 
-        val btnWaA = findViewById<CircleImageView>(R.id.btn_whatsapp_a)
-        btnWaA.setOnClickListener(this)
         val btnWaB = findViewById<ImageView>(R.id.btn_whatsapp_b)
         btnWaB.setOnClickListener(this)
+        val btnWaText = findViewById<TextView>(R.id.wa_text)
+        btnWaText.setOnClickListener(this)
+
+        val btnGithub = findViewById<ImageView>(R.id.btn_github_b)
+        btnGithub.setOnClickListener(this)
+        val btnGithubText = findViewById<TextView>(R.id.github_text)
+        btnGithubText.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
         when (v.id) {
-            R.id.btn_email_a, R.id.btn_email_b -> {
+            R.id.btn_email_b, R.id.email_text -> {
                 val intent = Intent(Intent.ACTION_SEND)
                 intent.data = Uri.parse("Email")
-                intent.type = "message/rfc822"
-                intent.putExtra(Intent.EXTRA_EMAIL,"rosyidrosadi15@gmail.com")
+                intent.putExtra(Intent.EXTRA_EMAIL, arrayOf("rosyidrosadi15@gmail.com"))
                 intent.putExtra(Intent.EXTRA_SUBJECT,"User Nusantara Indah")
                 intent.putExtra(Intent.EXTRA_TEXT,"Hi Rosyid. \nSaya User Nusantara Indah")
+                intent.type = "message/rfc822"
                 startActivity(intent)
             }
 
-            R.id.btn_whatsapp_a, R.id.btn_whatsapp_b -> {
+            R.id.btn_whatsapp_b, R.id.wa_text -> {
                 val webWhatsapp : Intent = Uri.parse("https://api.whatsapp.com/send?phone=+6285735321687&text=Hai Rosyid!%0ASaya User Nusantara Indah.")
                     .let { webpage -> Intent(Intent.ACTION_VIEW, webpage)
                     }
                 startActivity(webWhatsapp)
             }
 
-            R.id.btn_ig_a, R.id.btn_ig_b -> {
+            R.id.btn_ig_b, R.id.ig_text -> {
                 val webIG : Intent = Uri.parse("https://www.instagram.com/rosyid_arsha/")
                     .let { webpage -> Intent(Intent.ACTION_VIEW, webpage)
                     }
                 startActivity(webIG)
+            }
+
+            R.id.btn_github_b, R.id.github_text -> {
+                val webGithub : Intent = Uri.parse("https://github.com/rizfa-is")
+                    .let { webpage -> Intent(Intent.ACTION_VIEW, webpage)
+                    }
+                startActivity(webGithub)
             }
         }
     }
