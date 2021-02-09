@@ -16,10 +16,6 @@ class ChooseProvince : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.choose_province)
         supportActionBar?.hide()
-//        supportActionBar?.title = "Pilih Provinsi"
-
-//        val btnBack: ImageView = findViewById(R.id.btn_back)
-//        btnBack.setOnClickListener(this)
 
         val btnJatim: CardView = findViewById(R.id.choose_jatim)
         btnJatim.setOnClickListener(this)
@@ -27,7 +23,7 @@ class ChooseProvince : AppCompatActivity(), View.OnClickListener {
         val btnJateng: CardView = findViewById(R.id.choose_jateng)
         btnJateng.setOnClickListener(this)
 
-        //        Navigation Bottom
+        //        Bottom Navigation
         val bottomNavigation : ChipNavigationBar = findViewById(R.id.bottom_nav_test)
         bottomNavigation.setItemSelected(R.id.content_nav)
         bottomNavigation.setOnItemSelectedListener{
@@ -35,24 +31,20 @@ class ChooseProvince : AppCompatActivity(), View.OnClickListener {
                 R.id.home_nav -> {
                     val intent = Intent(this,MainActivity::class.java)
                     startActivity(intent)
+                    finishAffinity()
                 }
 
                 R.id.profil_nav -> {
                     val intent = Intent(this,AboutUsPage::class.java)
                     startActivity(intent)
+                    finishAffinity()
                 }
             }
         }
-//        Navigation Bottom
     }
 
     override fun onClick(v: View) {
         when (v.id) {
-//            R.id.btn_back -> {
-//                val mainActivity = Intent(this@ChooseProvince, MainActivity::class.java)
-//                startActivity(mainActivity)
-//            }
-
             R.id.choose_jatim -> {
                 val chooseJatim = Intent(this@ChooseProvince, DestinationMain::class.java)
                 startActivity(chooseJatim)

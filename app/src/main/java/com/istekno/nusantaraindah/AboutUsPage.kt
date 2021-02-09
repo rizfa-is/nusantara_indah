@@ -24,7 +24,6 @@ class AboutUsPage : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.about_us)
         supportActionBar?.hide()
-//        supportActionBar?.title = "My Profil"
 
         val btnEmailB = findViewById<ImageView>(R.id.btn_email_b)
         btnEmailB.setOnClickListener(this)
@@ -54,11 +53,13 @@ class AboutUsPage : AppCompatActivity(), View.OnClickListener {
                 R.id.home_nav -> {
                     val intent = Intent(this,MainActivity::class.java)
                     startActivity(intent)
+                    finishAffinity()
                 }
 
                 R.id.content_nav -> {
                     val intent = Intent(this,ChooseProvince::class.java)
                     startActivity(intent)
+                    finishAffinity()
                 }
             }
         }

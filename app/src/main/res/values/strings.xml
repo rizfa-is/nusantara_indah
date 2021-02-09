@@ -5,24 +5,5 @@
     <string name="btn_ayo">Ayo berpetualang !</string>
     <string name="btn_favorit">Lihat profil</string>
 
-    <string name="content_text">\t\t\tTaman Nasional Baluran adalah salah satu Taman Nasional di Indonesia yang terletak di wilayah Banyuputih, Situbondo, Jawa Timur, Indonesia. Nama dari Taman Nasional ini diambil dari nama gunung yang berada di daerah ini, yaitu Gunung Baluran.\n\n\t\t\tGerbang untuk masuk ke Taman Nasional Baluran berada di 7°55\'17.76"S dan 114°23'15.27"E. Taman nasional ini terdiri dari tipe vegetasi sabana, hutan mangrove, hutan musim, hutan pantai, hutan pegunungan bawah, hutan rawa dan hutan yang selalu hijau sepanjang tahun. Tipe vegetasi sabana mendominasi kawasan Taman Nasional Baluran yakni sekitar 40 persen dari total luas lahan. \n\n\t\t\tBerdasarkan SK. Menteri Kehutanan No. 279/Kpts.-VI/1997 tanggal 23 Mei 1997 kawasan TN Baluran ditetapkan memiliki luas sebesar 25.000 Ha.
-Sesuai dengan peruntukkannya luas kawasan tersebut dibagi menjadi beberapa zona berdasarkan SK. Dirjen PKA No. 187/Kpts./DJ-V/1999 tanggal 13 Desember 1999 yang terdiri dari :
-\n1. zona inti seluas 12.000 Ha.
-\n2. zona rimba seluas 5.537 ha (perairan = 1.063 Ha dan daratan = 4.574 Ha).
-\n3. zona pemanfaatan intensif dengan luas 800 Ha.
-\n4. zona pemanfaatan khusus dengan luas 5.780 Ha, dan zona rehabilitasi seluas 783 Ha.</string>
-    <string name="content_specs_display">5.0 inches\nFHD AMOLED at 441ppi\n2.5D Corning® Gorilla® Glass 4</string>
-    <string name="content_specs_size">5.6 x 2.7 x 0.2 ~ 0.3 inches 143.8 x 69.5 x 7.3 ~ 8.5 mm</string>
-    <string name="content_specs_battery">2,770 mAh battery\nStandby time (LTE): up to 19 days\nTalk time (3g/WCDMA): up to 26 hours\nInternet use time (Wi-Fi): up to 13 hours\nInternet use time (LTE): up to 13 hours\nVideo playback: up to 13 hours\nAudio playback (via headset): up to 110 hours\nFast charging: up to 7 hours of use from only 15 minutes of charging</string>
-    <string name="dummy_photos">6 Photos</string>
-    <string name="dummy_value">$735</string>
-    <string name="stock">Stock hanya 5 buah</string>
-    <string name="spesification">Spesifikasi</string>
-    <string name="display">Display</string>
-    <string name="size">Size</string>
-    <string name="battery">Battery</string>
-    <string name="seller">Dijual oleh</string>
-    <string name="my_name">SIOS Group Ltd.</string>
-    <string name="buy">Beli</string>
     <string name="my_profil_desc">\t\t\tHi, saya Rosyid Rosadi seorang Freelancer sejak 2017. Pertama kali kenal dunia programming pada akhir 2018, ketika mengerjakan projek tools untuk Trading Forex berbasis Machine Learning sederhana menggunakan C++. Mengikuti 1 bootcamp Fullstack Web Node.Js dan sekali ikut pelatihan online Fullstack Mobile Development menggunakan framework Flutter.</string>
 </resources><!-- \ndalam bentangan indah samudra \nhingga gugusan puncak nirwana \nhanya di negeri kita tercinta  -->

@@ -27,10 +27,7 @@ class DestinationMainJateng : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.recycler_view_main)
-//        supportActionBar?.title = "Daftar Wisata Jawa Tengah"
         supportActionBar?.hide()
-//        val title : TextView = findViewById(R.id.daftar_wisata)
-//        title.text = "Daftar Wisata Jawa Tengah"
 
 //        Create list from getter listData from DestinationDataJateng
         rvDestination = findViewById(R.id.rv_main)
@@ -42,7 +39,7 @@ class DestinationMainJateng : AppCompatActivity() {
 //        run List RecyclerView Activity
         showDestinationList()
 
-        //        Navigation Bottom
+        //        Bottom Navigation
         val bottomNavigation : ChipNavigationBar = findViewById(R.id.bottom_nav_test)
         bottomNavigation.setItemSelected(R.id.content_nav)
         bottomNavigation.setOnItemSelectedListener{
@@ -50,15 +47,17 @@ class DestinationMainJateng : AppCompatActivity() {
                 R.id.home_nav -> {
                     val intent = Intent(this,MainActivity::class.java)
                     startActivity(intent)
+                    finishAffinity()
                 }
 
                 R.id.profil_nav -> {
                     val intent = Intent(this,AboutUsPage::class.java)
                     startActivity(intent)
+                    finishAffinity()
                 }
             }
         }
-//        Navigation Bottom
+//        Bottom Navigation
 
 //        Custom Option List Menu
         val iconList = findViewById<ImageView>(R.id.icon_list)

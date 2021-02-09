@@ -30,10 +30,7 @@ class DestinationMain : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.recycler_view_main)
-//        supportActionBar?.title = "Daftar Wisata Jawa Timur"
         supportActionBar?.hide()
-//        val title : TextView = findViewById(R.id.daftar_wisata)
-//        title.text = "Daftar Wisata Jawa Timur"
 
 //        Create list from getter listData from DestinationDataJatim
         rvDestination = findViewById(R.id.rv_main)
@@ -53,11 +50,13 @@ class DestinationMain : AppCompatActivity() {
                 R.id.home_nav -> {
                     val intent = Intent(this,MainActivity::class.java)
                     startActivity(intent)
+                    finishAffinity()
                 }
 
                 R.id.profil_nav -> {
                     val intent = Intent(this,AboutUsPage::class.java)
                     startActivity(intent)
+                    finishAffinity()
                 }
             }
         }

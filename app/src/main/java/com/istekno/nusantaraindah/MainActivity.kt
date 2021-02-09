@@ -29,16 +29,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 Toast.makeText(this, "Ayo berpetualang !", Toast.LENGTH_SHORT).show()
                 val chooseProv = Intent(this@MainActivity, ChooseProvince::class.java)
                 startActivity(chooseProv)
+                finish()
             }
         }
     }
 }
-
-/*
-TODO - Add Splash Screen
-TODO - Add Favorit Feature using Room Database or SQL
-TODO - Add Bottom Navigation : Home, Content, Favorit, My Profil
-TODO - Customize back button in details page
-TODO - Customize recycler view option menu on action bar
-TODO - Customize action bar & status bar
-*/
